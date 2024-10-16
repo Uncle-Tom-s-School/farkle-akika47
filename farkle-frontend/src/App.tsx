@@ -1,9 +1,11 @@
-import Game from "./Game";
-const App = () => {
+import React from "react";
+import GameBoard from "./GameBoard";
+import "./App.css";
+
+const App: React.FC = () => {
   return (
-    <div>
-      <h1>Farkle Minigame</h1>
-      <Game />
+    <div className="app">
+      <GameBoard />
     </div>
   );
 };
